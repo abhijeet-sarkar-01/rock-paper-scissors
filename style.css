@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.how-to-play-btn{
+    border-radius: 50%;
+    background-color: #a0a0a042;
+    border: none;
+}
+
+.modal{
+    color: #222;
+}
+
+main{
+    margin: 2rem auto;
+    width: 70rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Option buttons */
+
+.option{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    height: 5rem;
+}
+
+.choice-btn{
+    border: none;
+    border-radius: 20%;
+    overflow: hidden;   
+    background-color: white;
+    border: 4px rgb(255, 255, 255) solid;
+    transition: linear 0.2s all;
+}
+
+.choice-btn:hover{
+    border: 4px rgb(0, 216, 105) solid;
+}
+
+.choice-image{
+    width: 5rem;
+    height: 5rem;
+    padding: 0.2rem;
+}
+
+
+/* Choice display */
+
+.player-choice, .computer-choice{
+    margin-top: 1rem;
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.display-img{
+    width: 100%;
+    height: 100%;
+    margin: 1rem;
+}
+
+.shake-ani{
+    animation: horizontal-shaking 1s infinite;
+}
+
+.compu-text{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(10px) }
+    50% { transform: translateX(-10px) }
+    75% { transform: translateX(10px) }
+    100% { transform: translateX(0) }
+   }
+
+/* Results */
+
+.results{
+    font-size: 1.5rem;
+}
+
+.table{
+    --bs-table-bg: #222;
+    --bs-table-color: whitesmoke:
+}
+
+.wins{
+    --bs-table-color: rgb(0, 210, 0);
+}
+.losses{
+    --bs-table-color: rgb(255, 105, 75);
+}
+.ties{
+    --bs-table-color: rgb(205, 220, 0);
+}
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #acacac35;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
+
+a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.links{
+    display: flex;
+    gap: 2rem;
+}
